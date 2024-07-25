@@ -1,9 +1,9 @@
 # Projeto Firebase com NodeTS
 
-<div style="display: flex; flex-direciton: row">
-  <img style="width: 33.33%" aling="center" alt="firebase" src="https://jafapps.com.br/wp-content/uploads/2019/01/jafapps_.png"/>
-  <img style="width: 33.33%"  aling="center" alt="nodejs" src="https://miro.medium.com/v2/resize:fit:900/1*TY9uBBO9leUbRtlXmQBiug.png"/>
-  <img style="width: 33.33%"  aling="center" alt="typescript" src="https://www.svgrepo.com/show/374144/typescript.svg"/>
+<div style="display: inline-block;">
+  <img style="width: 300px; vertical-align: middle;" alt="firebase" src="https://jafapps.com.br/wp-content/uploads/2019/01/jafapps_.png"/>
+  <img style="width: 300px; vertical-align: middle;" alt="nodejs" src="https://miro.medium.com/v2/resize:fit:900/1*TY9uBBO9leUbRtlXmQBiug.png"/>
+  <img style="width: 300px; vertical-align: middle;" alt="typescript" src="https://www.svgrepo.com/show/374144/typescript.svg"/>
 </div>
 
 ## Tecnologias Usadas
