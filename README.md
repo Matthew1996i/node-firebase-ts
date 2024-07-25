@@ -29,7 +29,7 @@ npm install
 
 - `lint`: Verifica o código utilizando ESLint.
 - `build`: Compila o código TypeScript.
-- `build`:watch: Compila o código TypeScript em modo watch.
+- `build:watch`: Compila o código TypeScript em modo watch.
 - `serve`: Compila o código e inicia os emuladores do Firebase (apenas Functions).
 - `shell`: Compila o código e inicia o shell do Firebase Functions.
 - `start`: Inicia o shell do Firebase Functions.
