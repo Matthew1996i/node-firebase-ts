@@ -2,14 +2,15 @@ import { IIncrementIdCollectionRepository } from "./IIncrementIdCollectionReposi
 import { QueryDocumentSnapshot } from "firebase-admin/firestore";
 import { AdminProvider } from "../../../application/provider/Admin/AdminProvider";
 import { UserDataDTO } from "./dtos";
+import { IdExtractor } from "../../../../shared/domain/helpers/incremented-id-extractor";
 
 class IncrementIdCollectionRepository
+  extends IdExtractor<UserDataDTO>
   implements IIncrementIdCollectionRepository
 {
   async increment(snap: QueryDocumentSnapshot): Promise<void> {
     const db = await new AdminProvider();
     const users: UserDataDTO[] = [];
-    let incrementedId: number;
 
     const usersRefSnapshot = await db
       .execute()
@@ -21,11 +22,7 @@ class IncrementIdCollectionRepository
       users.push(doc.data() as UserDataDTO);
     });
 
-    if (!users.length || !users[users.length - 2]?.incremented_id) {
-      incrementedId = 1;
-    } else {
-      incrementedId = users[users.length - 2].incremented_id + 1;
-    }
+    const incrementedId = this.extract(users, "incremented_id");
 
     await snap.ref.set({ incremented_id: incrementedId }, { merge: true });
   }
