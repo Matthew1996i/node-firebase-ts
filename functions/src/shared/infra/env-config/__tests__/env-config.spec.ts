@@ -13,7 +13,8 @@ describe("EnvConfigService unit tests", () => {
     expect(sut).toBeDefined();
   });
 
-  it("should return the variable PORT", () => {
-    expect(sut.getDocument()).toBe("users");
+  it("should return the variable DOCUMENT", () => {
+    const documentEnvironment = "users";
+    expect(sut.getDocument()).toBe(documentEnvironment);
   });
 });
