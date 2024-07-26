@@ -1,4 +1,4 @@
-import { EnvConfiguration } from "@/shared/infra/env-config/env-config";
+import { EnvConfiguration } from "../../../../shared/infra/env-config/env-config";
 import { BadRequestError } from "../../../../shared/application/errors/bad-request-error";
 import { AdminProvider } from "../../../application/provider/Admin/AdminProvider";
 import { CollectionProps } from "./dtos";

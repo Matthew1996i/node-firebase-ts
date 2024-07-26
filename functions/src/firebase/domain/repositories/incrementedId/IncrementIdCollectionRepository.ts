@@ -3,7 +3,7 @@ import { QueryDocumentSnapshot } from "firebase-admin/firestore";
 import { AdminProvider } from "../../../application/provider/Admin/AdminProvider";
 import { UserDataDTO } from "./dtos";
 import { IdExtractor } from "../../../../shared/domain/helpers/incremented-id-extractor";
-import { EnvConfiguration } from "@/shared/infra/env-config/env-config";
+import { EnvConfiguration } from "../../../../shared/infra/env-config/env-config";
 
 class IncrementIdCollectionRepository
   extends IdExtractor<UserDataDTO>
